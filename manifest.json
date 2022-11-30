@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "12ft ladder",
+  "description": "Remove paywall via 12ft.io",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "ladder.png"
+  },
+  "action": {
+    "default_popup": "ladder.html",
+    "default_icon": "ladder.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
